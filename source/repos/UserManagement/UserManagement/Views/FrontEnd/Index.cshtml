@@ -1,0 +1,10 @@
+﻿@using Microsoft.AspNetCore.Authorization;
+
+@{
+    Layout = "/Views/Shared/_FrontEndLayout.cshtml";
+    ViewData["Title"] = "Index";
+}
+@attribute [Authorize(Roles = "Customer")]
+<h1>Index</h1>
+<p>Hello Customer</p>
+
